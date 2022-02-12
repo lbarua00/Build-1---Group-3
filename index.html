@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Example Title of the App -->
+        <title>WatchDogs</title>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        
+        <!--Login Page-->
+        <h1>Welcome to WatchDogs</h1>
+        
+        <div class="loginPage">
+
+            <form id="login" method="POST" action="action-page.php">
+
+                <!--Username container-->
+                <label>Username: </label>
+                <input type="text" name="username" id="username" required><br><br>
+
+                <!--Password container-->
+                <label>Password: </label>
+                <input type="password" name="password" id="password" required><br><br>
+
+                <!--Login button-->
+                <input type="button" name="log" id="log" value="Login"><br><br>
+
+                <!-- Option to remember user for next login -->
+                <input type="checkbox" id="chkbox">
+                <span>Remember me</span><br><br>
+
+                <!-- Option to forget password -->
+                <a href="forgotpass">Forgot Password</a>
+
+            </form>
+
+        </div>
+
+
+    </body>
+</html>
