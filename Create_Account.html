@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>Create Account</title>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+        <!--Create Acct Page-->
+        <title>Create Account</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="create_acct.css" rel="stylesheet">
     </head>
 
     <body>
         <!--Create Account-->
 
-        <h1>Create Account</h1>
+        <!--Navigation Bar-->
+        <div class="centerPage">
 
-        <div class="createAccount">
-            <form id="createAccount" method="POST" action="action-page.php">
-                
-                <!--First Name container-->
-                <label>First Name: </label>
-                <input type="firstName" name="firstName" id="firstName" required><br><br>
-                
-                <!--Last Name container-->
-                <label>Last Name: </label>
-                <input type="lastName" name="lastName" id="lastName" required><br><br>
+            <div class="createAccount">
+                <h1>Create Account</h1>
+           
+                <form id="createAccount" method="POST" action="action-page.php">
 
-                <!--E-mail container-->
-                <label>E-mail: </label>
-                <input type="email" name="email" id="email" required><br><br>
+                    <!--First Name container-->
+                    <label>First Name: </label>
+                    <input type="firstName" name="firstName" id="firstName" required><br><br>
 
-                <!--Password container-->
-                <label>Password: </label>
-                <input type="password" name="password" id="password" required><br><br>
+                    <!--Last Name container-->
+                    <label>Last Name: </label>
+                    <input type="lastName" name="lastName" id="lastName" required><br><br>
 
-                <!--Create Account-->
-                <input type="button" name="createAccount" id="createAccount" value="Create"><br><br>
+                    <!--E-mail container-->
+                    <label>E-mail: </label>
+                    <input type="email" name="email" id="email" required><br><br>
 
-            </form>
+                    <!--Password container-->
+                    <label>Password: </label>
+                    <input type="password" name="password" id="password" required><br><br>
+
+                    <!--Create Account-->
+                    <input type="button" name="createAccount" id="createAccount" value="Create"><br><br>
+
+                </form>
+            </div>
         </div>
+        
     </body>
