@@ -4,42 +4,51 @@
         <!-- Example Title of the App -->
         <title>WatchDogs</title>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
 
     </head>
 
     <body>
-        
+
         <!--Login Page-->
-        <h1>Welcome to WatchDogs</h1>
+
+        <!-- nav bar would go here if need ignore for now
+             <nav class="navbar">
+            <img  class="logo" src="logo.png" alt="dog logo">
+        </nav>  -->
+        <div class="centerPage">
         
-        <div class="loginPage">
+            <div class="loginPage">
+                <h1>Welcome to WatchDogs</h1>
+                <h2>Login</h2>
 
-            <form id="login" method="POST" action="action-page.php">
+                <form id="login" method="POST" action="action-page.php">
+                
+                    <!--Username container-->
+                    <label>Username: </label>
+                    <input type="text" name="username" id="username" required><br><br>
 
-                <!--Username container-->
-                <label>Username: </label>
-                <input type="text" name="username" id="username" required><br><br>
+                    <!--Password container-->
+                    <label>Password: </label>
+                    <input type="password" name="password" id="password" required><br><br>
 
-                <!--Password container-->
-                <label>Password: </label>
-                <input type="password" name="password" id="password" required><br><br>
+                    <!-- Option to remember user for next login -->
+                    <input type="checkbox" id="chkbox">
+                    <span>Remember me</span><br><br>                
 
-                <!-- Option to remember user for next login -->
-                <input type="checkbox" id="chkbox">
-                <span>Remember me</span><br><br>                
+                    <!--Login button-->
+                    <input type="button" name="log" id="log" value="Login">
+                    <a href="Create_Account.html">Create Account</a><br><br>
 
-                <!--Login button-->
-                <input type="button" name="log" id="log" value="Login">
-                <a href="Create_Account.html">Create Account</a><br><br>
+                    <!-- Option to forget password -->
+                    <a href="forgotpass">Forgot Password</a>
 
-                <!-- Option to forget password -->
-                <a href="forgotpass">Forgot Password</a>
-
-            </form>
-
+                </form>
+            </div>
         </div>
 
+    </div>
 
     </body>
 </html>
