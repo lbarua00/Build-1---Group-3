@@ -8,7 +8,7 @@
         <link href="create_acct.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body onload="initialize()">
         <!--Create Account-->
 
         <!--Navigation Bar-->
@@ -36,10 +36,20 @@
                     <input type="password" name="password" id="password" required><br><br>
 
                     <!--Create Account-->
-                    <input type="button" name="createAccount" id="createAccount" value="Create"><br><br>
+                    <input type="button" name="createAccount" id="createAccount" 
+                     onclick="createButton()" value="Create"><br><br>
 
                 </form>
             </div>
+            <!-- the purpose of the following div is to show that our buttons do stuff when clicked -->
+        </div>
+
+        <div id="output">
+            <p>
+                <!-- Here is where it actually goes -->
+            </p>
         </div>
         
+        <script src="./index.js"></script>
     </body>
+</html>

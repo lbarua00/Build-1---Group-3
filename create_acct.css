@@ -136,3 +136,8 @@ sizing for the logo ignore for now
     width: fit-content;
     height: fit-content;
 }
+
+#output {
+    color:      #D5D5F5;
+    text-align:   center;
+}
