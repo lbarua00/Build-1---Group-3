@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
     font-family: 'Kumbh Sans', sans-serif;
@@ -16,6 +16,7 @@ h1 {
     text-align: left;
     border: solid, 3px;
     border-radius: 3px;
+    margin: 5px 0px 0px 0px
 }
 
 #addPet {
