@@ -4,25 +4,25 @@
     <head>
         <title>Home Page</title>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="home_page.css" rel="stylesheet">
     </head>
 
     <body>
-        <!--Home Page-->
-
-        <h1>Watch Dogs</h1>
-        <p>
-            Would you like to add a pet?
-        </p>
-
-        <div class="createpet">
-            <form id="createPet" method="POST" action="action-page.php">
-
-                <!--Add Pet-->
-                <label>Pet Name: </label>
-                <input type="petName" name="petName" id="petName" required><br><br>
-                <button type="addPet" name-"addPet" id="addPet">Add Pet</button>
-            </form>
+        <div class="centerpage">
+             <div class="createpet">
+                <h1>Watch Dogs</h1>
+                <p class="txt">
+                    Would you like to add a pet?
+                </p>
+                <form method="POST" action="action-page.php">
+                    <!--Add Pet-->
+                    <label class="txt">Pet Name: </label>
+                    <input type="petName" name="petName" id="petName" required><br><br>
+                    <button type="addPet" name="addPet" id="addPet">Add Pet</button>
+                </form>
+            </div>
         </div>
+        <!--Home Page-->    
     </body>
-
 </html>
