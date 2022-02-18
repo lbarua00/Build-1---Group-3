@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+    padding: 0;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+#old_pet_data, tr, td {
+    border: solid;
+    text-align: right;
+}
+
+.center_page {
+    height: 100vh;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit_pet {
+    overflow: hidden;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 3px 12px 28px -3px rgba(0,0,0,0.45);
+}
+
