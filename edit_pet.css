@@ -10,13 +10,34 @@ h1 {
 
 th {
     text-align: center;
+    background-color: blueviolet;
 }
 
-#old_pet_data, tr, td {
+#button {
+    float: right;
+    border: solid, purple;
+    height:30px;
+    width: 100px;
+}
+#button:hover {
+    background-color: blueviolet;
+}
+
+#old_pet_data, tr {
     border: solid;
+}
+
+#edit_pet_data, tr {
+    border: solid;
+}
+
+td {
+    border: solid;
+}
+
+.text_right {
     text-align: right;
 }
-
 .center_page {
     height: 100vh;
     margin: 50px;
@@ -27,7 +48,7 @@ th {
 
 .edit_pet {
     overflow: hidden;
-    padding: 50px;
+    padding: 30px;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     box-shadow: 3px 12px 28px -3px rgba(0,0,0,0.45);
