@@ -1,67 +1,62 @@
 * {
-    box-sizing: border-box;
-    /* font-size: 24px; */
+  box-sizing: border-box;
+  /* font-size: 24px; */
 }
 
-
-body{
-    margin:            0;
-    padding:           0;
-    background:        linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
-    font-family:       'Kumbh Sans', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 label {
-    display:           block;
-    padding:           5px 0px 5px 0px
+  display: block;
+  padding: 5px 0px 5px 0px;
 }
 
 input[type="text"],
 input[type="password"],
-input[type="button"]  {
-    display:            block;
-    background-color: #D5D5F5;
-    color:            black;
-
+input[type="button"] {
+  display: block;
+  background-color: #d5d5f5;
+  color: black;
 }
 
-input[type="button"]  {
-    padding:            15px 42%;
-    margin:             0px 0 20px 0px;
-    cursor:             pointer;
-    text-transform:     uppercase;
-    text-align:         center;
-    border:             none;
-    border-radius:      3px;
-    font-weight:        700;
-    font-size:          18px;
+input[type="button"] {
+  padding: 15px 42%;
+  margin: 0px 0 20px 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
-
-h1{
-    text-align:         center;
+h1 {
+  text-align: center;
 }
 
 h2 {
-    margin-bottom:      20px
+  margin-bottom: 20px;
 }
 
-
-input[type="button"]:hover  {
-    box-shadow:         0px 0px 10px 1px rgba(0,0,0,0.45);
+input[type="button"]:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);
 }
 
 a {
-    text-decoration:    none;
+  text-decoration: none;
 }
 
 .centerPage {
-    height:             100vh;
-    display:            flex;
-    justify-content:    center;
-    align-items:        center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /*
 sizing for the logo ignore for now
@@ -72,36 +67,51 @@ sizing for the logo ignore for now
 } 
 */
 
-.loginPage{
-    overflow:           hidden;
-    padding:            50px;
-    background-color: rgb(255, 255, 255);
-    border-radius:      15px;
-    box-shadow:         3px 12px 28px -3px rgba(0,0,0,0.45);
+.loginPage {
+  overflow: hidden;
+  padding: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 3px 12px 28px -3px rgba(0, 0, 0, 0.45);
 }
-
-
 
 #username {
-    width:              100%;
-    height:             30px;
-    border:             none;
-    border-radius:      3px;
-    padding-left:       8px;
-
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
 }
 
-#password{
-    width:              100%;
-    height:             30px;
-    border:             none;
-    border-radius:      3px;
-    padding-left:       8px;
-
+#password {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
 }
 
-#log{
-    width:              fit-content;
-    height:             fit-content;
+#log {
+  width: fit-content;
+  height: fit-content;
 }
 
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-error-msg {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border: 1px solid black;
+  background-color: red;
+}
