@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+       /* Still need to edit CSS for this webpage */
+
+        body {
+            background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+            font-family: 'Kumbh Sans', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .buttons {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .buttons button {
+            width: 120px;
+            height: 45px;
+            background-color: black;
+            color: #ffffff;
+            border: none;
+            font-family: 'Kumbh Sans', sans-serif;
+            font-size: 18px;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border: solid black 1px;
+            width: 100%;
+        }
+
+        .center_page {
+            height: 100vh;
+            margin: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .timerDisplay {
+            position: relative;
+            width: 92%;
+            background: #ffffff;
+            left: 4%;
+            padding: 40px 0;
+            font-family: 'Roboto mono', monospace;
+            color: black;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+        }
+    </style>
+    <title>Start A Walk</title>
+</head>
+
+<body>
+    <div class="center_page">
+        <h1>Go On A Walk</h1><br>
+
+        <div class="timerDisplay">
+            00 : 00 : 00 : 000
+        </div><br>
+
+        <div class="buttons">
+            <button type="start" name="start" id="start">Start</button>
+            <button type="stop" name="stop" id="stop">Stop</button>
+        </div><br><br>
+
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Pee</td>
+                <td>Poo</td>
+            </tr>
+            <tr>
+                <!-- Will contain the names referenced from the database -->
+                <td></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table><br>
+
+        <h2>Time: </h2>
+    </div>
+
+
+</body>
+
+</html>
