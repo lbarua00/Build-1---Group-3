@@ -35,6 +35,16 @@ function createButton() {
          Password   :   ${password}`);
 
     showInputs(fname, lname, email, password);
+
+    // exampleQuery();
+
+    // con.connect(function(err) {
+    //     if (err) throw err;
+    //     con.query("SELECT * FROM Pets", function (err, result, fields) {
+    //       if (err) throw err;
+    //       console.log(result);
+    //     });
+    //   });
 }
 
 function showInputs(fname, lname, email, password) {
@@ -59,10 +69,74 @@ function showInputs(fname, lname, email, password) {
 
 }
 
+// function exampleQuery () {
+
+//     con.query('SELECT * FROM Users', (err,rows) => {
+//         if(err) throw err;
+      
+//         console.log('Data received from Db:');
+//         console.log(rows);
+//       });
+
+// }
+
 function saveInputs(fname, lname, email, password) {
     //here, we can eventually write code that will save the input variables to a json file
     //or skip that step and just have it write to our database through a sql command
     //whatever tickles our fancy
     //or not
 }
+
+function simpleSelect (select, from) {
+    let query = ''
+
+    query = `SELECT ${select} FROM ${from}`
+
+    console.log(query)
+}
+
+function simpleInsert (table, values) {
+    let query = ''
+
+    query = `INSERT INTO ${table} VALUES ${values}`
+
+    console.log(query)
+}
+
+function updateOwner (fname, lname, email, password, userID) {
+    let query = ''
+
+    query = `UPDATE Owners SET fname = ${fname}, lname = ${lname}, email = ${email}, password = ${password}
+             WHERE userID = ${userID}`
+    
+    console.log(query)
+}
+
+function updatePet (name, age, sex, breed, petID) {
+    let query = ''
+
+    query = `UPDATE Pets SET name = ${name}, age = ${age}, sex = ${sex}, breed = ${breed}
+             WHERE petID = ${petID}`
+    
+    console.log(query)
+}
+
+function newWalk (date, starttime, endtime) {
+    let query = ''
+
+    query = `INSERT INTO Walks (date, starttime, endtime)
+             VALUES (${date}, ${starttime}, ${endtime})`
+
+    console.log(query)
+}
+
+function newPetsWalks (walkID, petID, poop, pee) {
+    let query = ''
+
+    query = `INSERT INTO PetsWalks (walkID, petID, poop, pee)
+             VALUES (${walkID}, ${petID}, ${poop}, ${pee})`
+
+    console.log(query)
+}
+
 
